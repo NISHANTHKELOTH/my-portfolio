@@ -1,0 +1,268 @@
+*{
+    margin:0;
+    padding:0;
+    width: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:sans-serif ;
+
+}
+body{
+    background-color:#0F172A ;
+    color: white;
+    line-height: 1.6;
+   
+    
+}
+
+nav{
+     display: flex;
+     justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color:#0F172A;
+    position: fixed;
+    top:0;
+    z-index: 100;
+    border-radius: 20px;
+    opacity: 90%;
+   
+
+}
+nav ul{
+    color: white;
+    display: flex;
+    list-style: none;
+    gap:30px;
+    
+
+}
+nav ul li a{
+    color:white;
+    font-weight: 700;
+    transition: 3s;
+    text-decoration: none;
+    
+
+
+}
+.logo{
+    color: #38BDF8;
+    font-size:1.8rem ;
+    font-weight:700 ;
+    font-family: Arial, sans-serif;
+    
+}
+nav ul li a:hover{
+    color: #38bdf8;
+}
+.hero{
+    min-height: 90vh;
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-items:center ;
+    padding: 20px;
+}
+.content h1 span{
+    color:#38BDF8;
+}
+.content h1{
+    color:antiquewhite;
+    
+}
+.content h2{
+    color: azure;
+    
+}
+.content p{
+    color:azure;
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+   
+
+}
+
+.about{
+    margin-top: 100px;
+    
+    text-align: center; 
+    padding: 80px 10%;
+    
+}
+.about h2{
+    color:#38bdf8;
+   margin-bottom: 20px;
+  font-size: 2rem;
+
+}
+.about p{
+    color: azure;
+    max-width: 700px;
+    margin: auto;
+    font-weight:700;
+
+}
+.skills{
+    margin-top: 250px;
+    min-height:100vh ;
+    padding: 80px 10%;
+    text-align: center;
+}
+.skills h2{
+    color:#38BDF8;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+#skills{
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#skills span{
+    background: #1e293b;
+    border: 2px solid #38bdf8;
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition: 0.3s;
+    width: auto;
+    height: 50px;
+    margin-bottom: 200px;
+}
+#skills span:hover{
+    background: #38bdf8;
+    color: black;
+    transform: translateY(-5px);
+}
+
+.projects{
+    margin-top: -100px;
+    min-height: 90vh;
+    padding: 80px 10%;
+    text-align: center;
+    margin-bottom: 200px;
+
+}
+.projects h2{
+    color:#38BDF8;
+    margin-bottom: 30px;
+    font-size: 2rem;
+
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-card{
+    width: 400px;
+    background: #1e293b;
+    border: 2px solid #38bdf8;
+    border-radius: 15px;
+    padding: 25px;
+}
+.button1{
+    text-decoration: none;
+    color:aliceblue;
+    background-color: #38BDF8;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-size: larger;
+    font-weight: 600;
+    margin-top: 150px;
+   
+  
+    
+
+
+}
+ .button2{
+    text-decoration: none;
+    color:aliceblue;
+    background-color: #38BDF8;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-size: larger;
+    font-weight: 600;
+    margin-top: 100px;
+   
+  
+    
+
+
+}
+.projects div:hover{
+   
+   
+    transform: translateY(-5px);
+}
+.contact{
+    margin-top: 500px;
+     margin-bottom: 300px;
+     margin-top: 100px;
+    padding: 80px 10%;
+     text-align: center;
+
+}
+.contact h2{
+  
+    color: #38BDF8;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+    font-size: 2rem;
+}
+.contact p{
+    font-size: medium;
+}
+footer{
+    padding: 80px 10%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0F172A;
+    border-bottom: 20px;
+
+
+}
+footer h1{
+    color:antiquewhite;
+}
+
+/* Mobile Responsive */
+@media (max-width:768px){
+
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content h1{
+        font-size: 2rem;
+    }
+
+    .content h2{
+        font-size: 1.3rem;
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .contact{
+        padding: 60px 5%;
+    }
+}
